@@ -1,0 +1,766 @@
+/* ==============================================
+   BILL CODE - TEMAS VISUAIS
+   ============================================== */
+
+/* Variáveis padrão (Deep Dark por padrão) */
+.app-container {
+  --bg-primary: #050507;
+  --bg-secondary: #08080a;
+  --bg-tertiary: #101015;
+  --bg-input: #0d0d12;
+  --bg-hover: #1a1a24;
+  --bg-button: #7c5cfc;
+  --bg-button-hover: #6b4de0;
+  --border-color: #1a1a24;
+  --border-light: #0d0d12;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888899;
+  --text-white: #ffffff;
+  --text-dim: #555566;
+  --accent: #7c5cfc;
+  --accent-light: #9d85fd;
+  --accent-text: #7c5cfc;
+  --error: #ff4d4d;
+  --success: #00ff88;
+  --warning: #ffcc00;
+  --menu-bg: #08080a;
+  --menu-hover: #1a1a24;
+  --tab-active-bg: #050507;
+  --tab-inactive-bg: #08080a;
+  --chat-user-msg: #7c5cfc;
+  --chat-ai-msg: #101015;
+  --terminal-command: #7c5cfc;
+  --scrollbar-thumb: #1a1a24;
+  --scrollbar-thumb-hover: #2a2a3a;
+  --scrollbar-track: #050507;
+}
+
+/* ==============================================
+   TEMA 1: ESCURO ORIGINAL (Deep Dark)
+   ============================================== */
+.theme-dark,
+.app-container {
+  --bg-primary: #050507;
+  --bg-secondary: #08080a;
+  --bg-tertiary: #101015;
+  --bg-input: #0d0d12;
+  --bg-hover: #1a1a24;
+  --bg-button: #7c5cfc;
+  --bg-button-hover: #6b4de0;
+  --border-color: #1a1a24;
+  --border-light: #0d0d12;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888899;
+  --text-white: #ffffff;
+  --text-dim: #555566;
+  --accent: #7c5cfc;
+  --accent-light: #9d85fd;
+  --accent-text: #7c5cfc;
+  --error: #ff4d4d;
+  --success: #00ff88;
+  --warning: #ffcc00;
+  --menu-bg: #08080a;
+  --menu-hover: #1a1a24;
+  --tab-active-bg: #050507;
+  --tab-inactive-bg: #08080a;
+  --chat-user-msg: #7c5cfc;
+  --chat-ai-msg: #101015;
+  --terminal-command: #7c5cfc;
+  --scrollbar-thumb: #1a1a24;
+  --scrollbar-thumb-hover: #2a2a3a;
+  --scrollbar-track: #050507;
+}
+
+/* ==============================================
+   TEMA 2: CLAUDE (Refinado)
+   ============================================== */
+.theme-claude {
+  --bg-primary: #1e1d1a;
+  --bg-secondary: #262523;
+  --bg-tertiary: #2e2d2a;
+  --bg-input: #3b3a36;
+  --bg-hover: #33312e;
+  --bg-button: #d97757;
+  --bg-button-hover: #e58769;
+  --border-color: #403e3a;
+  --border-light: #2e2d2a;
+  --text-primary: #e6e4df;
+  --text-secondary: #a3a097;
+  --text-white: #ffffff;
+  --text-dim: #7a776f;
+  --accent: #d97757;
+  --accent-light: #e8a08a;
+  --accent-text: #e8a08a;
+  --error: #e05e5e;
+  --success: #67a36c;
+  --warning: #d6984e;
+  --menu-bg: #1a1917;
+  --menu-hover: #2e2d2a;
+  --tab-active-bg: #1e1d1a;
+  --tab-inactive-bg: #262523;
+  --chat-user-msg: #3b3a36;
+  --chat-ai-msg: #1e1d1a;
+  --terminal-command: #e8a08a;
+  --scrollbar-thumb: #52504a;
+  --scrollbar-thumb-hover: #69665e;
+  --scrollbar-track: #1e1d1a;
+}
+
+/* ==============================================
+   TEMA 3: MENU CLARO (Light Moderno)
+   ============================================== */
+.theme-light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f3f3;
+  --bg-tertiary: #e8e8e8;
+  --bg-input: #ffffff;
+  --bg-hover: #e8e8e8;
+  --bg-button: #0078d4;
+  --bg-button-hover: #106ebe;
+  --border-color: #d4d4d4;
+  --border-light: #e8e8e8;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-white: #000000;
+  --text-dim: #999999;
+  --accent: #0078d4;
+  --accent-light: #4da3e0;
+  --accent-text: #0078d4;
+  --error: #d32f2f;
+  --success: #388e3c;
+  --warning: #f57c00;
+  --menu-bg: #f3f3f3;
+  --menu-hover: #d4d4d4;
+  --tab-active-bg: #ffffff;
+  --tab-inactive-bg: #ececec;
+  --chat-user-msg: #0078d4;
+  --chat-ai-msg: #f0f0f0;
+  --terminal-command: #0078d4;
+  --scrollbar-thumb: #c1c1c1;
+  --scrollbar-thumb-hover: #a8a8a8;
+  --scrollbar-track: #f3f3f3;
+}
+
+/* ==============================================
+   TEMA 4: FACEBOOK (Roxo/Branco)
+   ============================================== */
+.theme-facebook {
+  --bg-primary: #f0f2f5;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e4e6eb;
+  --bg-input: #f0f2f5;
+  --bg-hover: #e4e6eb;
+  --bg-button: #9b30ff;
+  --bg-button-hover: #8a2be2;
+  --border-color: #dadde1;
+  --border-light: #e4e6eb;
+  --text-primary: #1c1e21;
+  --text-secondary: #65676b;
+  --text-white: #1c1e21;
+  --text-dim: #8a8d91;
+  --accent: #9b30ff;
+  --accent-light: #42b72a;
+  --accent-text: #9b30ff;
+  --error: #fa383e;
+  --success: #42b72a;
+  --warning: #f7b928;
+  --menu-bg: #ffffff;
+  --menu-hover: #f0f2f5;
+  --tab-active-bg: #ffffff;
+  --tab-inactive-bg: #f0f2f5;
+  --chat-user-msg: #9b30ff;
+  --chat-ai-msg: #e4e6eb;
+  --terminal-command: #9b30ff;
+  --scrollbar-thumb: #c1c1c1;
+  --scrollbar-thumb-hover: #a8a8a8;
+  --scrollbar-track: #f0f2f5;
+}
+
+/* ==============================================
+   TEMA 5: YOUTUBE (Vermelho/Escuro)
+   ============================================== */
+.theme-youtube {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #272727;
+  --bg-input: #303030;
+  --bg-hover: #272727;
+  --bg-button: #ff0000;
+  --bg-button-hover: #cc0000;
+  --border-color: #303030;
+  --border-light: #1a1a1a;
+  --text-primary: #f1f1f1;
+  --text-secondary: #aaaaaa;
+  --text-white: #ffffff;
+  --text-dim: #717171;
+  --accent: #ff0000;
+  --accent-light: #ff4444;
+  --accent-text: #ff6666;
+  --error: #ff4444;
+  --success: #2ba640;
+  --warning: #ffcc00;
+  --menu-bg: #1a1a1a;
+  --menu-hover: #303030;
+  --tab-active-bg: #0f0f0f;
+  --tab-inactive-bg: #1a1a1a;
+  --chat-user-msg: #ff0000;
+  --chat-ai-msg: #272727;
+  --terminal-command: #ff0000;
+  --scrollbar-thumb: #303030;
+  --scrollbar-thumb-hover: #404040;
+  --scrollbar-track: #0f0f0f;
+}
+
+/* ==============================================
+   TEMA 6: BILL EDITOR (Roxo/Deep Dark)
+   ============================================== */
+.theme-billeditor {
+  --bg-primary: #050507;
+  --bg-secondary: #08080a;
+  --bg-tertiary: #101015;
+  --bg-input: #0d0d12;
+  --bg-hover: #1a1a24;
+  --bg-button: #7c5cfc;
+  --bg-button-hover: #6b4de0;
+  --border-color: #1a1a24;
+  --border-light: #0d0d12;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888899;
+  --text-white: #ffffff;
+  --text-dim: #555566;
+  --accent: #7c5cfc;
+  --accent-light: #9d85fd;
+  --accent-text: #7c5cfc;
+  --error: #ff4d4d;
+  --success: #00ff88;
+  --warning: #ffcc00;
+  --menu-bg: #08080a;
+  --menu-hover: #1a1a24;
+  --tab-active-bg: #050507;
+  --tab-inactive-bg: #08080a;
+  --chat-user-msg: #7c5cfc;
+  --chat-ai-msg: #101015;
+  --terminal-command: #7c5cfc;
+  --scrollbar-thumb: #1a1a24;
+  --scrollbar-thumb-hover: #2a2a3a;
+  --scrollbar-track: #050507;
+}
+
+/* ==============================================
+   TEMA 7: MATRIX GREEN (Verde Hacker)
+   ============================================== */
+.theme-green {
+  --bg-primary: #050805;
+  --bg-secondary: #080a08;
+  --bg-tertiary: #0c120c;
+  --bg-input: #0a0d0a;
+  --bg-hover: #152015;
+  --bg-button: #00ff41;
+  --bg-button-hover: #00dd3a;
+  --border-color: #152015;
+  --border-light: #0a0d0a;
+  --text-primary: #00ff41;
+  --text-secondary: #008f11;
+  --text-white: #ffffff;
+  --text-dim: #003b00;
+  --accent: #00ff41;
+  --accent-light: #4dff88;
+  --accent-text: #00ff41;
+  --error: #ff4d4d;
+  --success: #00ff41;
+  --warning: #ffcc00;
+  --menu-bg: #080a08;
+  --menu-hover: #152015;
+  --tab-active-bg: #050805;
+  --tab-inactive-bg: #080a08;
+  --chat-user-msg: #00ff41;
+  --chat-ai-msg: #0c120c;
+  --terminal-command: #00ff41;
+  --scrollbar-thumb: #152015;
+  --scrollbar-thumb-hover: #203020;
+  --scrollbar-track: #050805;
+}
+
+/* ==============================================
+   TEMA 8: CYBER PINK (Rosa Choque)
+   ============================================== */
+.theme-pink {
+  --bg-primary: #080507;
+  --bg-secondary: #0a080a;
+  --bg-tertiary: #120c10;
+  --bg-input: #0d0a0d;
+  --bg-hover: #20151a;
+  --bg-button: #ff007f;
+  --bg-button-hover: #dd006f;
+  --border-color: #20151a;
+  --border-light: #0d0a0d;
+  --text-primary: #ff007f;
+  --text-secondary: #aa0055;
+  --text-white: #ffffff;
+  --text-dim: #55002b;
+  --accent: #ff007f;
+  --accent-light: #ff4da6;
+  --accent-text: #ff007f;
+  --error: #ff4d4d;
+  --success: #00ff88;
+  --warning: #ffcc00;
+  --menu-bg: #0a080a;
+  --menu-hover: #20151a;
+  --tab-active-bg: #080507;
+  --tab-inactive-bg: #0a080a;
+  --chat-user-msg: #ff007f;
+  --chat-ai-msg: #120c10;
+  --terminal-command: #ff007f;
+  --scrollbar-thumb: #20151a;
+  --scrollbar-thumb-hover: #302025;
+  --scrollbar-track: #080507;
+}
+
+/* ==============================================
+   TEMA 9: RGB GAMER (Dinâmico)
+   ============================================== */
+@property --rgb-accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #ff0000;
+}
+
+.theme-rgb {
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #101010;
+  --bg-input: #0d0d0d;
+  --bg-hover: #1a1a1a;
+  --bg-button: var(--rgb-accent);
+  --bg-button-hover: var(--rgb-accent);
+  --border-color: #1a1a1a;
+  --border-light: #0d0d12;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --text-white: #ffffff;
+  --text-dim: #444444;
+  --accent: var(--rgb-accent);
+  --accent-light: var(--rgb-accent);
+  --accent-text: var(--rgb-accent);
+  --error: #ff4d4d;
+  --success: #00ff88;
+  --warning: #ffcc00;
+  --menu-bg: #0a0a0a;
+  --menu-hover: #1a1a1a;
+  --tab-active-bg: #050505;
+  --tab-inactive-bg: #0a0a0a;
+  --chat-user-msg: var(--rgb-accent);
+  --chat-ai-msg: #101010;
+  --terminal-command: var(--rgb-accent);
+  --scrollbar-thumb: #1a1a1a;
+  --scrollbar-thumb-hover: #2a2a2a;
+  --scrollbar-track: #050505;
+  
+  animation: rgb-cycle 8s linear infinite;
+}
+
+@keyframes rgb-cycle {
+  0% { --rgb-accent: #ff0000; }
+  17% { --rgb-accent: #ff8800; }
+  33% { --rgb-accent: #ffff00; }
+  50% { --rgb-accent: #00ff00; }
+  67% { --rgb-accent: #00ffff; }
+  83% { --rgb-accent: #0000ff; }
+  100% { --rgb-accent: #ff00ff; }
+}
+
+/* ==============================================
+   APLICAÇÃO DAS VARIÁVEIS NOS COMPONENTES
+   ============================================== */
+
+/* Backgrounds */
+.app-container {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.menu-bar {
+  background: var(--menu-bg);
+  border-bottom: 1px solid var(--border-light);
+  -webkit-app-region: drag;
+}
+
+.menu-item {
+  color: var(--text-primary);
+  -webkit-app-region: no-drag;
+}
+
+.menu-item:hover {
+  background: var(--menu-hover);
+}
+
+.app-title {
+  color: var(--accent-text);
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-light);
+}
+
+.activity-bar {
+  background: var(--bg-tertiary);
+  border-right: 1px solid var(--border-light);
+}
+
+.activity-btn {
+  color: var(--text-secondary);
+}
+
+.activity-btn:hover {
+  color: var(--text-white);
+}
+
+.activity-btn.active {
+  color: var(--text-white);
+}
+
+.side-panel {
+  background: var(--bg-secondary);
+}
+
+.panel-header {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.file-name {
+  color: var(--text-primary);
+}
+
+.file-name:hover {
+  background: var(--bg-hover);
+}
+
+.file-tree-sub {
+  border-left: 1px solid var(--border-color);
+}
+
+.action-btn {
+  background: var(--bg-button);
+  color: white;
+}
+
+.action-btn:hover {
+  background: var(--bg-button-hover);
+}
+
+.empty-message {
+  color: var(--text-secondary);
+}
+
+.empty-message small {
+  color: var(--text-dim);
+}
+
+/* Inputs */
+.search-input,
+.setting-group input,
+.setting-group select,
+.model-select,
+.terminal-input,
+.chat-input-wrapper textarea {
+  background: var(--bg-input);
+  border: 1px solid var(--bg-input);
+  color: var(--text-primary);
+}
+
+.search-input:focus,
+.setting-group input:focus,
+.setting-group select:focus,
+.model-select:focus,
+.terminal-input:focus,
+.chat-input-wrapper textarea:focus {
+  border-color: var(--accent);
+}
+
+/* Editor */
+.editor-container {
+  background: var(--bg-primary);
+}
+
+.editor-tabs {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.tab {
+  background: var(--tab-inactive-bg);
+  color: var(--text-secondary);
+  border-right: 1px solid var(--border-light);
+}
+
+.tab.active {
+  background: var(--tab-active-bg);
+  color: var(--text-white);
+  border-top: 2px solid var(--accent);
+}
+
+.editor-empty {
+  color: var(--text-secondary);
+}
+
+.editor-empty h2 {
+  color: var(--text-primary);
+}
+
+.quick-start {
+  background: var(--bg-secondary);
+}
+
+.quick-start h3 {
+  color: var(--text-primary);
+}
+
+.quick-start li {
+  color: var(--text-secondary);
+}
+
+.quick-start kbd {
+  background: var(--bg-input);
+  border-color: var(--scrollbar-thumb-hover);
+  color: var(--text-primary);
+}
+
+/* Chat */
+.chat-container {
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-light);
+}
+
+.chat-header {
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.chat-title {
+  color: var(--text-white);
+}
+
+.chat-welcome {
+  color: var(--text-secondary);
+}
+
+.chat-welcome h3 {
+  color: var(--text-primary);
+}
+
+.prompt-btn {
+  background: var(--chat-ai-msg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.prompt-btn:hover {
+  background: var(--bg-input);
+  border-color: var(--accent);
+}
+
+.message.assistant .message-text {
+  background: var(--chat-ai-msg);
+  color: var(--text-primary);
+}
+
+.message.user .message-text {
+  background: var(--chat-user-msg);
+  color: #ffffff;
+}
+
+.message-avatar {
+  background: var(--bg-input);
+}
+
+.chat-input-form {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-light);
+}
+
+.send-btn {
+  background: var(--bg-button);
+}
+
+.send-btn:hover {
+  background: var(--bg-button-hover);
+}
+
+.send-btn:disabled {
+  background: var(--bg-input);
+  color: var(--text-secondary);
+}
+
+.refresh-models-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--bg-input);
+  color: var(--text-primary);
+}
+
+.refresh-models-btn:hover {
+  background: var(--menu-hover);
+  border-color: var(--accent);
+}
+
+/* Terminal */
+.terminal-container {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.terminal-header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terminal-title {
+  color: var(--text-primary);
+}
+
+.icon-btn {
+  color: var(--text-secondary);
+}
+
+.icon-btn:hover {
+  background: var(--bg-input);
+  color: var(--text-white);
+}
+
+.terminal-line {
+  color: var(--text-primary);
+}
+
+.terminal-line.command {
+  color: var(--terminal-command);
+}
+
+.terminal-line.error {
+  color: var(--error);
+}
+
+.terminal-empty {
+  color: var(--text-secondary);
+}
+
+.quick-cmd-btn {
+  background: var(--chat-ai-msg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.quick-cmd-btn:hover {
+  background: var(--bg-input);
+  border-color: var(--accent);
+}
+
+.terminal-input-form {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+.prompt-symbol {
+  color: var(--accent);
+}
+
+/* Settings Panel */
+.setting-group label {
+  color: var(--text-primary);
+}
+
+.setting-group small {
+  color: var(--text-secondary);
+}
+
+.setting-info-box {
+  background: var(--chat-ai-msg);
+  border-left: 3px solid var(--accent);
+}
+
+.setting-info-box h4 {
+  color: var(--text-primary);
+}
+
+.setting-info-box ol,
+.setting-info-box ul {
+  color: var(--text-secondary);
+}
+
+.setting-info-box code {
+  background: var(--bg-input);
+  color: var(--accent-text);
+}
+
+.setting-info-box a {
+  color: var(--accent-light);
+}
+
+.setting-info-box p {
+  color: var(--text-primary);
+}
+
+.shortcuts-table {
+  background: var(--chat-ai-msg);
+}
+
+.shortcut-row {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.shortcut-row kbd {
+  background: var(--bg-input);
+  border-color: var(--scrollbar-thumb-hover);
+  color: var(--text-primary);
+}
+
+.about-info {
+  background: var(--chat-ai-msg);
+  color: var(--text-secondary);
+}
+
+.about-info strong {
+  color: var(--text-primary);
+}
+
+.setting-info {
+  background: var(--chat-ai-msg);
+}
+
+.setting-info p {
+  color: var(--text-primary);
+}
+
+.setting-info ul {
+  color: var(--text-secondary);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.terminal-output::-webkit-scrollbar-track,
+.settings-full-content::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+.terminal-output::-webkit-scrollbar-thumb,
+.settings-full-content::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+.terminal-output::-webkit-scrollbar-thumb:hover,
+.settings-full-content::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}

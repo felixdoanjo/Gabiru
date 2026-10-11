@@ -1,0 +1,55 @@
+{
+  "name": "bill-code-runtime",
+  "version": "1.0.0",
+  "description": "Gabiru Runtime Dependencies",
+  "build": {
+    "appId": "com.billcode.runtime",
+    "productName": "Gabiru Runtime",
+    "directories": {
+      "output": "release-runtime",
+      "app": "runtime-dummy"
+    },
+    "files": [
+      "**/*"
+    ],
+    "extraFiles": [
+      {
+        "from": "installer-deps/python",
+        "to": "runtime/python",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "installer-deps/python-packages",
+        "to": "runtime/python/Lib/site-packages",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "installer-deps/ffmpeg",
+        "to": "runtime/ffmpeg",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "installer-deps/piper-tts",
+        "to": "runtime/piper-tts",
+        "filter": ["**/*"]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": false,
+      "warningsAsErrors": false
+    }
+  }
+}

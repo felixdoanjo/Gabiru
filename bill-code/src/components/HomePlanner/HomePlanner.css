@@ -1,0 +1,240 @@
+/* HomePlanner - Tema Dark (padrão) */
+.home-planner-container {
+  background: #09090e;
+}
+
+.home-planner-calendar {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(124, 92, 252, 0.3);
+}
+
+.home-planner-calendar-header {
+  color: #c084fc;
+}
+
+.home-planner-calendar-nav-btn {
+  background: rgba(124, 92, 252, 0.2);
+  border: 1px solid rgba(124, 92, 252, 0.3);
+  color: #c084fc;
+}
+
+.home-planner-calendar-nav-btn:hover {
+  background: rgba(124, 92, 252, 0.3);
+}
+
+.home-planner-weekday {
+  color: #7c5cfc;
+}
+
+.home-planner-weekday-divider {
+  border-bottom: 1px solid rgba(124, 92, 252, 0.2);
+}
+
+.home-planner-day {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-planner-day.today {
+  background: linear-gradient(135deg, rgba(124, 92, 252, 0.4), rgba(102, 126, 234, 0.3));
+  border: 2px solid rgba(124, 92, 252, 0.6);
+}
+
+.home-planner-day.past {
+  background: rgba(255, 255, 255, 0.02);
+  opacity: 0.5;
+}
+
+.home-planner-day.has-reminders {
+  border: 1px solid rgba(34, 197, 153, 0.4);
+}
+
+.home-planner-day-number {
+  color: white;
+}
+
+.home-planner-day.today .home-planner-day-number {
+  color: #c084fc;
+}
+
+.home-planner-day.has-reminders .home-planner-day-number {
+  color: #34d399;
+}
+
+.home-planner-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.home-planner-reminder-item {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(34, 197, 153, 0.2);
+}
+
+.home-planner-section {
+  background: linear-gradient(135deg, rgba(124, 92, 252, 0.1), rgba(102, 126, 234, 0.05));
+  border: 1px solid rgba(124, 92, 252, 0.2);
+}
+
+.home-planner-section-header {
+  color: #c084fc;
+}
+
+.home-planner-empty-state {
+  color: #666;
+}
+
+/* HomePlanner - Tema Light (facebook) */
+.theme-facebook .home-planner-container {
+  background: #f0f2f5;
+}
+
+.theme-facebook .home-planner-calendar {
+  background: #ffffff;
+  border: 1px solid rgba(155, 48, 255, 0.2);
+}
+
+.theme-facebook .home-planner-calendar-header {
+  color: #9b30ff;
+}
+
+.theme-facebook .home-planner-calendar-nav-btn {
+  background: rgba(155, 48, 255, 0.1);
+  border: 1px solid rgba(155, 48, 255, 0.2);
+  color: #9b30ff;
+}
+
+.theme-facebook .home-planner-calendar-nav-btn:hover {
+  background: rgba(155, 48, 255, 0.2);
+}
+
+.theme-facebook .home-planner-weekday {
+  color: #9b30ff;
+}
+
+.theme-facebook .home-planner-weekday-divider {
+  border-bottom: 1px solid rgba(155, 48, 255, 0.15);
+}
+
+.theme-facebook .home-planner-day {
+  background: #f8f9fa;
+  border: 1px solid #e4e6eb;
+}
+
+.theme-facebook .home-planner-day.today {
+  background: linear-gradient(135deg, rgba(155, 48, 255, 0.15), rgba(138, 43, 226, 0.1));
+  border: 2px solid rgba(155, 48, 255, 0.4);
+}
+
+.theme-facebook .home-planner-day.past {
+  background: #fafafa;
+  opacity: 0.6;
+}
+
+.theme-facebook .home-planner-day.has-reminders {
+  border: 1px solid rgba(34, 197, 153, 0.3);
+}
+
+.theme-facebook .home-planner-day-number {
+  color: #1c1e21;
+}
+
+.theme-facebook .home-planner-day.today .home-planner-day-number {
+  color: #9b30ff;
+  font-weight: 800;
+}
+
+.theme-facebook .home-planner-day.has-reminders .home-planner-day-number {
+  color: #22c55e;
+}
+
+.theme-facebook .home-planner-input {
+  background: #f0f2f5;
+  border: 1px solid #dadde1;
+  color: #1c1e21;
+}
+
+.theme-facebook .home-planner-reminder-item {
+  background: #f8f9fa;
+  border: 1px solid rgba(34, 197, 153, 0.2);
+}
+
+/* Painéis mantêm as cores originais roxo e verde */
+.theme-facebook .home-planner-section {
+  background: linear-gradient(135deg, rgba(124, 92, 252, 0.08), rgba(102, 126, 234, 0.04));
+  border: 1px solid rgba(124, 92, 252, 0.2);
+}
+
+.theme-facebook .home-planner-section-header {
+  color: #9b30ff;
+}
+
+.theme-facebook .home-planner-empty-state {
+  color: #8a8d91;
+}
+
+
+/* Detalhes do dia selecionado - Dark */
+.home-planner-day-details-reminders {
+  background: linear-gradient(135deg, rgba(34, 197, 153, 0.1), rgba(16, 185, 129, 0.05));
+  border: 1px solid rgba(34, 197, 153, 0.2);
+}
+
+.home-planner-day-details-notes {
+  background: linear-gradient(135deg, rgba(124, 92, 252, 0.1), rgba(102, 126, 234, 0.05));
+  border: 1px solid rgba(124, 92, 252, 0.2);
+}
+
+.home-planner-reminder-card {
+  color: white;
+}
+
+.home-planner-reminder-title {
+  color: white;
+}
+
+.home-planner-note-header {
+  background: rgba(124, 92, 252, 0.15);
+  color: #c084fc;
+}
+
+.home-planner-textarea {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(124, 92, 252, 0.2);
+  color: white;
+}
+
+/* Detalhes do dia selecionado - Light */
+.theme-facebook .home-planner-day-details-reminders {
+  background: linear-gradient(135deg, rgba(34, 197, 153, 0.08), rgba(16, 185, 129, 0.04));
+  border: 1px solid rgba(34, 197, 153, 0.2);
+}
+
+.theme-facebook .home-planner-day-details-notes {
+  background: linear-gradient(135deg, rgba(155, 48, 255, 0.08), rgba(138, 43, 226, 0.04));
+  border: 1px solid rgba(155, 48, 255, 0.2);
+}
+
+.theme-facebook .home-planner-reminder-card {
+  color: #1c1e21;
+}
+
+.theme-facebook .home-planner-reminder-title {
+  color: #1c1e21;
+}
+
+.theme-facebook .home-planner-note-header {
+  background: rgba(155, 48, 255, 0.1);
+  color: #9b30ff;
+}
+
+.theme-facebook .home-planner-textarea {
+  background: #ffffff;
+  border: 1px solid rgba(155, 48, 255, 0.2);
+  color: #1c1e21;
+}
+
+.theme-facebook .home-planner-textarea::placeholder {
+  color: #8a8d91;
+}

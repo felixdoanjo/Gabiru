@@ -1,0 +1,350 @@
+.sidebar {
+  display: flex;
+  width: 260px;
+  min-width: 260px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-light);
+  height: 100%;
+}
+
+.activity-bar {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  background: var(--bg-tertiary);
+  border-right: 1px solid var(--border-light);
+  padding-top: 8px;
+}
+
+.activity-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activity-btn:hover {
+  color: var(--text-white);
+}
+
+.activity-btn.active {
+  color: var(--text-white);
+  border-left: 2px solid var(--accent);
+}
+
+.side-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.panel-actions {
+  padding: 8px;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 6px 12px;
+  background: var(--bg-button);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.action-btn:hover {
+  background: var(--bg-button-hover);
+}
+
+.explorer-panel,
+.search-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.settings-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.work-folder {
+  padding: 8px 0;
+}
+
+.folder-title {
+  padding: 4px 12px;
+  font-weight: bold;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.file-list {
+  margin-top: 4px;
+}
+
+.file-item {
+  cursor: pointer;
+}
+
+.file-name {
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  font-size: 13px;
+  user-select: none;
+}
+
+.file-name:hover {
+  background: var(--bg-hover);
+}
+
+.file-name.folder {
+  font-weight: 500;
+}
+
+.chevron-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  margin-right: 4px;
+}
+
+.file-name .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.text-vscode-folder {
+  color: #9ca3af;
+}
+
+.text-vscode-file {
+  color: var(--accent-light);
+}
+
+.file-tree-sub {
+  border-left: 1px solid var(--border-color);
+  margin-left: 18px;
+}
+
+.empty-message {
+  padding: 20px 12px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.empty-message small {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-dim);
+}
+
+/* Search Panel */
+.search-input {
+  margin: 8px;
+  padding: 6px 10px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 13px;
+  width: calc(100% - 36px);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Settings Panel */
+.settings-content {
+  padding: 12px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.setting-group {
+  margin-bottom: 16px;
+}
+
+.setting-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.setting-group input,
+.setting-group select,
+.setting-group textarea {
+  width: 100%;
+  padding: 10px 12px !important;
+  background: #1e1e1e !important;
+  border: 1px solid #555 !important;
+  border-radius: 6px !important;
+  color: white !important;
+  font-size: 13px !important;
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+  transition: all 0.2s !important;
+}
+
+.setting-group input:focus,
+.setting-group select:focus,
+.setting-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(0,0,0,0.8);
+  box-shadow: 0 0 0 2px rgba(155, 89, 182, 0.2);
+}
+
+.setting-group small {
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 11px;
+}
+
+.setting-info {
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--chat-ai-msg);
+  border-radius: 4px;
+}
+
+.setting-info p {
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+  font-size: 12px;
+}
+
+.setting-info ul {
+  margin: 0;
+  padding-left: 16px;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.setting-info li {
+  margin-bottom: 4px;
+}
+
+/* Sidebar Tabs */
+.settings-tab-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  font-size: 11px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  gap: 10px;
+  transition: all 0.2s;
+  font-weight: normal;
+}
+.settings-tab-btn:hover {
+  color: var(--text-primary);
+}
+.settings-tab-btn.active {
+  background: rgba(255,255,255,0.05);
+  color: var(--accent);
+  border-left-color: var(--accent);
+  font-weight: bold;
+}
+/* Modal specific styles */
+.modal-save-btn {
+  width: 100%;
+  padding: 14px;
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+.modal-save-btn:hover {
+  background: #444;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+.model-list-item {
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.model-list-item:hover {
+  border-color: #777;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+.model-header-btn {
+  flex: 1;
+  padding: 12px 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s;
+}
+.model-header-btn:hover {
+  background: rgba(255,255,255,0.08);
+}
+.model-del-btn {
+  padding: 12px 18px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid #444;
+  color: #ff5555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.model-del-btn:hover {
+  background: rgba(255, 85, 85, 0.2);
+  color: white;
+}

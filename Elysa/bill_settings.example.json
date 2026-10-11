@@ -1,0 +1,72 @@
+{
+  "workFolder": "C:\\Users\\SEU_USUARIO\\Desktop\\testes\\mousestore",
+  "ollamaModel": "qwen2.5-coder:7b",
+  "ollamaModels": [
+    "qwen3-vl:8b",
+    "kimi-k2.5:cloud",
+    "qwen3.5:397b-cloud",
+    "qwen2.5-coder:3b",
+    "llama3.2:1b",
+    "qwen2.5-coder:7b",
+    "moondream:latest",
+    "gemma3:4b"
+  ],
+  "apiProvider": "ollama",
+  "geminiApiKey": "SUA_CHAVE_GEMINI_AQUI",
+  "geminiModel": "models/gemini-2.5-flash",
+  "openrouterApiKey": "SUA_CHAVE_OPENROUTER_AQUI",
+  "openrouterModel": "nvidia/nemotron-3-super-120b-a12b:free",
+  "openrouterUrl": "https://openrouter.ai/api/v1/chat/completions",
+  "anthropicApiKey": "",
+  "anthropicModel": "claude-sonnet-4-20250514",
+  "openaiApiKey": "SUA_CHAVE_OPENAI_AQUI",
+  "openaiModel": "gemini-1.5-flash",
+  "openaiUrl": "https://api.openai.com/v1/chat/completions",
+  "theme": "billeditor",
+  "activeMainView": "home",
+  "voiceVolume": 0,
+  "micHotkey": "Mouse4",
+  "visionMode": "moondream",
+  "moondreamModel": "moondream",
+  "customName": "DeepSeek",
+  "customBaseUrl": "http://localhost:3002",
+  "customApiKey": "",
+  "customModel": "deepseek-v4-flash",
+  "pollinationsApiKey": "",
+  "searchProvider": "tavily",
+  "tavilyApiKey": "SUA_CHAVE_TAVILY_AQUI",
+  "googleApiKey": "SUA_CHAVE_GOOGLE_AQUI",
+  "googleCx": "SEU_GOOGLE_CX_AQUI",
+  "braveApiKey": "",
+  "providers": {
+    "ollama": {
+      "model": "qwen2.5-coder:7b"
+    },
+    "gemini": {
+      "key": "SUA_CHAVE_GEMINI_AQUI",
+      "modelo": "models/gemini-2.5-flash"
+    },
+    "openai": {
+      "key": "SUA_CHAVE_OPENAI_AQUI",
+      "modelo": "gemini-1.5-flash",
+      "url": "https://api.openai.com/v1/chat/completions"
+    },
+    "anthropic": {
+      "key": "",
+      "modelo": "claude-sonnet-4-20250514"
+    },
+    "openrouter": {
+      "key": "SUA_CHAVE_OPENROUTER_AQUI",
+      "modelo": "nvidia/nemotron-3-super-120b-a12b:free",
+      "url": "https://openrouter.ai/api/v1/chat/completions"
+    },
+    "custom": {
+      "key": "",
+      "modelo": "deepseek-v4-flash",
+      "url": "http://localhost:3002"
+    },
+    "pollinations": {
+      "key": ""
+    }
+  }
+}

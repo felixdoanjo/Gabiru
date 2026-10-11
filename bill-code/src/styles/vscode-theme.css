@@ -1,0 +1,150 @@
+/* Tema estilo VSCode para o Bill Code */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Menu Bar */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 0 12px;
+  background: var(--menu-bg);
+  border-bottom: 1px solid var(--border-light);
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+.menu-bar.gaming-hidden {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+
+.menu-items {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+
+.menu-item {
+  padding: 3px 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.1s;
+}
+
+.menu-item:hover {
+  background: var(--menu-hover);
+}
+
+.app-title {
+  font-size: 13px;
+  color: var(--accent-text);
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-provider-badge {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1px 8px;
+  white-space: nowrap;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Panel Resize Handles */
+.resize-handle-horizontal {
+  width: 4px;
+  background-color: transparent;
+  cursor: col-resize;
+  transition: background-color 0.15s ease;
+  z-index: 10;
+}
+
+.resize-handle-horizontal:hover,
+.resize-handle-horizontal[data-resize-handle-state="drag"] {
+  background-color: var(--accent);
+}
+
+.resize-handle-vertical {
+  height: 4px;
+  background-color: transparent;
+  cursor: row-resize;
+  transition: background-color 0.15s ease;
+  z-index: 10;
+  border-top: 1px solid var(--border-color);
+}
+
+.resize-handle-vertical:hover,
+.resize-handle-vertical[data-resize-handle-state="drag"] {
+  background-color: var(--accent);
+}
+
+/* Panel Toggle Handles */
+.panel-toggle-handle:hover {
+  background: var(--bg-hover) !important;
+}
+
+.panel-toggle-handle:hover div {
+  background: var(--accent) !important;
+  opacity: 1 !important;
+}
+
+/* Gaming mini mode — janela transparente */
+.gaming-mini .app-container,
+.gaming-mini {
+  background: transparent !important;
+}
+
+/* Remove efeito roxo do chat no mini mode */
+.gaming-mini-mode .chat-container::before,
+.gaming-mini-mode .chat-container::after {
+  display: none !important;
+}
+
+.gaming-mini-mode {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Quando mini: app inteiro transparente exceto o ícone */
+.gaming-mini-mode,
+.gaming-mini-mode > * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Remove qualquer background do body/html no mini mode */
+body.gaming-mini-active,
+html.gaming-mini-active {
+  background: transparent !important;
+  background-color: transparent !important;
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-05T23:01:37.998Z",
+  "chatId": "1791241199331",
+  "systemPrompt": "Você é um assistente de IA geral. Responda de forma natural, direta e útil.\n\n🌐 PESQUISA WEB DISPONÍVEL\nVocê tem acesso à internet via `web-action:research`. A pesquisa está SEMPRE habilitada e disponível.\n\nREGRAS CRÍTICAS:\n\n1. QUANDO USAR PESQUISA:\n   - APENAS quando o usuário MANDAR EXPLICITAMENTE: \"pesquisa\", \"busca\", \"procura\", \"search\"\n   - NUNCA pesquise automaticamente só porque é uma pergunta sobre fatos\n   - Se o usuário NÃO pedir para pesquisar, responda com seu conhecimento interno\n\n2. COMO EXECUTAR PESQUISA:\n   - Quando o usuário pedir para pesquisar: GERE APENAS o bloco de código abaixo\n   - SEM NENHUM TEXTO antes ou depois\n   - NENHUMA saudação, NENHUM aviso, NENHUM emoji\n   - APENAS o bloco de ação:\n\n```web-action:research\n{\"query\": \"termo de busca\"}\n```\n\n3. DEPOIS QUE A PESQUISA RETORNAR:\n   - Responda à pergunta diretamente e de forma natural\n   - Finja que já sabia a resposta desde o início\n   - NÃO diga que pesquisou\n   - NÃO mencione fontes ou links\n   - Apenas responda de forma natural\n\nEXEMPLOS CORRETOS:\n\nUsuário: \"pesquisa quando lança GTA 6\"\nVocê: ```web-action:research\n{\"query\": \"GTA 6 data lançamento\"}\n```\n\nUsuário: \"busca preço iPhone\"\nVocê: ```web-action:research\n{\"query\": \"iPhone preço Brasil\"}\n```\n\nEXEMPLOS INCORRETOS (NÃO pesquisar):\n\nUsuário: \"quando lança GTA 6?\"\nVocê: O GTA 6 ainda não tem data oficial confirmada.\n\nUsuário: \"quanto custa iPhone?\"\nVocê: O preço varia conforme modelo e região.",
+  "historyLength": 3,
+  "history": [
+    {
+      "role": "user",
+      "content": "Brasil é o País da alegria"
+    },
+    {
+      "role": "assistant",
+      "content": "Brasil tem seus problemas, mas o povo sabe celebrar a vida como ninguém. Carnaval, futebol, churrasco, festa junina — a alegria tá no DNA cultural, não no PIB."
+    },
+    {
+      "role": "assistant",
+      "content": "Concordo com Gabiru, nada a adicionar."
+    }
+  ]
+}

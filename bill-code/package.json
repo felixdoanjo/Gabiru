@@ -1,0 +1,113 @@
+{
+  "name": "bill-code",
+  "version": "1.0.0",
+  "description": "Gabiru - Editor de código com IA local estilo VSCode",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "electron:compile": "tsc -p electron/tsconfig.json",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && npm run electron:compile && electron .\"",
+    "prepare-installer": "node prepare-installer.js",
+    "electron:build": "npm run electron:compile && vite build && cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" electron-builder",
+    "build": "npm run electron:compile && vite build && cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" electron-builder",
+    "build-runtime": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" electron-builder --config package-runtime.json",
+    "build-all": "npm run build && npm run build-runtime",
+    "build-full": "npm run prepare-installer && npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "ollama",
+    "code-editor",
+    "ai"
+  ],
+  "author": "Gabiru Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "archiver": "^8.0.0",
+    "concurrently": "^8.2.2",
+    "cross-env": "^10.1.0",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-electron": "^0.28.0",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.34.0",
+    "@ghostery/adblocker-electron": "^2.18.0",
+    "@monaco-editor/react": "^4.6.0",
+    "extract-zip": "^2.0.1",
+    "lucide-react": "^1.14.0",
+    "monaco-editor": "^0.45.0",
+    "node-pty": "^1.0.0",
+    "ollama": "^0.5.0",
+    "opentype.js": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-resizable-panels": "^4.10.0",
+    "webm-muxer": "^5.1.4"
+  },
+  "build": {
+    "appId": "com.billcode.app",
+    "productName": "Gabiru",
+    "directories": {
+      "output": "release",
+      "buildResources": "."
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "plugins-dist/**/*",
+      "scripts/**/*",
+      "public/**/*"
+    ],
+    "asarUnpack": [
+      "scripts/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "scripts",
+        "to": "scripts"
+      },
+      {
+        "from": "installer-deps/piper-tts",
+        "to": "piper-voices"
+      }
+    ],
+    "extraFiles": [],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "resources/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "resources/icon.ico",
+      "uninstallerIcon": "resources/icon.ico",
+      "installerHeaderIcon": "resources/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Gabiru",
+      "warningsAsErrors": false,
+      "differentialPackage": false,
+      "unicode": true
+    },
+    "compression": "maximum"
+  }
+}
