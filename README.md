@@ -1,7 +1,7 @@
 ﻿# Gabiru
 
 <div align="center">
-  <img src="public/logo oficial.png" alt="Gabiru Logo" width="120"/>
+  <img src="assets/logo oficial.png" alt="Gabiru Logo" width="120"/>
   
   ### Workspace Brasileiro Open Source
   
